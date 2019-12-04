@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhifa.bootmybatisplus.mapper.WxMoreInfoMapper">
+  <resultMap id="BaseResultMap" type="com.zhifa.bootmybatisplus.domain.WxMoreInfo">
+    <!--@mbg.generated-->
+    <!--@Table wx_more_info-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="picUrl" jdbcType="VARCHAR" property="picurl" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, title, description, picUrl, url
+  </sql>
+</mapper>

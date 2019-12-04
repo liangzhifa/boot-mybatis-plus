@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://47.100.45.101:3306/liangzhifa?serverTimezone=Asia/Shanghai&useAffectedRows=true&useSSL=true&characterEncoding=utf8
+    password: zhifa123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+server:
+  servlet:
+    context-path: /
+# ≈‰÷√slq¥Ú”°»’÷æ
+
+logging:
+  level:
+    com:
+      demo:
+        system:
+          mapper=debug:
