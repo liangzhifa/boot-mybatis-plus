@@ -17,9 +17,14 @@ class BootMybatisPlusApplicationTests {
 
     @Test
     void contextLoads() {
-        QueryWrapper wrapper = new QueryWrapper();
+        WxMoreInfo wxMoreInfo = new WxMoreInfo();
+        wxMoreInfo.setId(2);
+        QueryWrapper wrapper = new QueryWrapper(wxMoreInfo);
         List<WxMoreInfo> wxMoreInfos = wxMoreInfoMapper.selectList(wrapper);
         System.out.println();
+        List<WxMoreInfo> infos = wxMoreInfoMapper.selectByTitle("小学教课资源");
     }
+
+
 
 }

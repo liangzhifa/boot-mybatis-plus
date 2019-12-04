@@ -8,10 +8,12 @@ server:
   servlet:
     context-path: /
 # ≈‰÷√slq¥Ú”°»’÷æ
-
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  typeAliasesPackage: com.zhifa.bootmybatisplus.domain
 logging:
   level:
     com:
-      demo:
-        system:
-          mapper=debug:
+     zhifa:
+      bootmybatisplus:
+       mapper: debug

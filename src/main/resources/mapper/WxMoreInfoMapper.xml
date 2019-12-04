@@ -14,4 +14,7 @@
     <!--@mbg.generated-->
     id, title, description, picUrl, url
   </sql>
+    <select id="selectByTitle" resultMap="BaseResultMap">
+      select * from wx_more_info where title=#{title}
+    </select>
 </mapper>
